@@ -1,13 +1,17 @@
 def bubble_sort(array1)
-  swap = 0
-  for i in 0..array1.length()-1
-    if array1[i] > array1[i+1]
-      swap = array1[i]
-      array1[i] = array1[i+1]
-      array1[i+1] = swap
-    end
-  end
-  puts array1
+  arrLen = array1.length() - 2
+  (arrLen).downto(0).each {
+     |i|
+      (0).upto(arrLen).each {
+        |j|
+        if array1[j] > array1[j+1]
+           swap = array1[j]
+           array1[j] = array1[j+1]
+           array1[j+1] = swap
+         end
+      }
+    }
+    puts array1
 end
 
-bubble_sort([9,2,5,3,8,6])
+bubble_sort([25,2,1,15,3,8])
