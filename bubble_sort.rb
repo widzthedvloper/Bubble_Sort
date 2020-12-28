@@ -8,8 +8,7 @@ def bubble_sort(array1)
       array1[j + 1] = swap
   end
   end
-
-puts array1
+  puts array1
 end
 
 bubble_sort([25, 2, 1, 15, 3, 8])
