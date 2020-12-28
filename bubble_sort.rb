@@ -1,15 +1,14 @@
 def bubble_sort(array1)
   arr_len = array1.length - 2
-  arr_len.downto(0).each { |i|
-      0.upto(arr_len).each {
-      |j|
-        if array1[j] > array1[j+1]
-           swap = array1[j]
-           array1[j] = array1[j+1]
-           array1[j+1] = swap
-         end
-        }
-      }
+  arr_len.downto(0).each do
+      0.upto(arr_len).each do |j|
+          if array1[j] > array1[j + 1]
+            swap = array1[j]
+            array1[j] = array1[j + 1]
+            array1[j + 1] = swap
+          end
+      end
+  end
   puts array1
 end
 
