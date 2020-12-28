@@ -1,5 +1,5 @@
 def bubble_sort(array1)
-    arr_len = array1.length - 2
+  arr_len = array1.length - 2
       arr_len.downto(0).each do
         0.upto(arr_len).each do |j|
           next if array1[j] < array1[j + 1]
