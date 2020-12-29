@@ -1,4 +1,4 @@
-def bubble_sort_by(integers)
+def bubble_sort(integers)
   size = integers.length - 2
   size.downto(0).each do
     0.upto(size).each do |j|
@@ -13,4 +13,4 @@ def bubble_sort_by(integers)
   integers
 end
 
-puts bubble_sort_by([25, 2, 1, 15, 3, 8])
+puts bubble_sort([25, 2, 1, 15, 3, 8])
