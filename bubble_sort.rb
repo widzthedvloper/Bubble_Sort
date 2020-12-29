@@ -17,7 +17,7 @@ def bubble_sort_by(integers)
   size = integers.length - 2
   size.downto(0).each do
     0.upto(size).each do |j|
-      next if yield(integers[j], integers[j + 1]) < 0
+      next if yield(integers[j], integers[j + 1]).negative?
 
       swap = integers[j]
       integers[j] = integers[j + 1]
