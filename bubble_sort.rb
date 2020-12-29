@@ -5,7 +5,7 @@ def bubble_sort(array1)
     next if array1[j] < array1[j + 1]
       swap = array1[j]
       array1[j] = array1[j + 1]
-      array1[j + 1] = swap 
+      array1[j + 1] = swap
   end
   end
   puts array1
