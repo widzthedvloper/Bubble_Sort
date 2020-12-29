@@ -10,7 +10,7 @@ def bubble_sort_by(integers)
     end
   end
 
-  return integers
+  integers
 end
 
 puts bubble_sort_by([25, 2, 1, 15, 3, 8])
