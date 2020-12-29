@@ -28,6 +28,6 @@ def bubble_sort_by(integers)
   integers
 end
 
-puts (bubble_sort_by([25, 25, 1, 25, 3, 8]) do |left, right|
+puts(bubble_sort_by([25, 25, 1, 25, 3, 8]) do |left, right|
   left - right
 end)
